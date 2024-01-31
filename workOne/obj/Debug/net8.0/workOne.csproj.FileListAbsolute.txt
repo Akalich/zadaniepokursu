@@ -1,0 +1,14 @@
+C:\Users\akuno\Desktop\workOne\bin\Debug\net8.0\workOne.exe
+C:\Users\akuno\Desktop\workOne\bin\Debug\net8.0\workOne.deps.json
+C:\Users\akuno\Desktop\workOne\bin\Debug\net8.0\workOne.runtimeconfig.json
+C:\Users\akuno\Desktop\workOne\bin\Debug\net8.0\workOne.dll
+C:\Users\akuno\Desktop\workOne\bin\Debug\net8.0\workOne.pdb
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.AssemblyInfoInputs.cache
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.AssemblyInfo.cs
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.csproj.CoreCompileInputs.cache
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.dll
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\refint\workOne.dll
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.pdb
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\workOne.genruntimeconfig.cache
+C:\Users\akuno\Desktop\workOne\obj\Debug\net8.0\ref\workOne.dll
