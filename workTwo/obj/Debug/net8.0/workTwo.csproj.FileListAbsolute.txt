@@ -1,0 +1,14 @@
+C:\Users\akuno\Desktop\workTwo\bin\Debug\net8.0\workTwo.exe
+C:\Users\akuno\Desktop\workTwo\bin\Debug\net8.0\workTwo.deps.json
+C:\Users\akuno\Desktop\workTwo\bin\Debug\net8.0\workTwo.runtimeconfig.json
+C:\Users\akuno\Desktop\workTwo\bin\Debug\net8.0\workTwo.dll
+C:\Users\akuno\Desktop\workTwo\bin\Debug\net8.0\workTwo.pdb
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.AssemblyInfoInputs.cache
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.AssemblyInfo.cs
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.csproj.CoreCompileInputs.cache
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.dll
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\refint\workTwo.dll
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.pdb
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\workTwo.genruntimeconfig.cache
+C:\Users\akuno\Desktop\workTwo\obj\Debug\net8.0\ref\workTwo.dll

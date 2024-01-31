@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UEAWHvRpFCnnrIe/x6GVfSbCswUvv37M/338tL1WNy7zlOEfNGxUw4lCM3PScjd3niDzTO7utkm3TNK/bv2kLA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akuno\\Desktop\\workTwo\\workTwo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akuno\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.0\\microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512",
+    "C:\\Users\\akuno\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.0\\microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
+    "C:\\Users\\akuno\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.0\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
