@@ -1,0 +1,14 @@
+C:\Users\akuno\Desktop\zadanieOne\bin\Debug\net8.0\zadanieOne.exe
+C:\Users\akuno\Desktop\zadanieOne\bin\Debug\net8.0\zadanieOne.deps.json
+C:\Users\akuno\Desktop\zadanieOne\bin\Debug\net8.0\zadanieOne.runtimeconfig.json
+C:\Users\akuno\Desktop\zadanieOne\bin\Debug\net8.0\zadanieOne.dll
+C:\Users\akuno\Desktop\zadanieOne\bin\Debug\net8.0\zadanieOne.pdb
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.AssemblyInfoInputs.cache
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.AssemblyInfo.cs
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.csproj.CoreCompileInputs.cache
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.dll
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\refint\zadanieOne.dll
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.pdb
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\zadanieOne.genruntimeconfig.cache
+C:\Users\akuno\Desktop\zadanieOne\obj\Debug\net8.0\ref\zadanieOne.dll

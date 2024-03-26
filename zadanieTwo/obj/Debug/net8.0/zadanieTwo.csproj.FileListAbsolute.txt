@@ -1,0 +1,4 @@
+C:\Users\akuno\Desktop\zadanieTwo\obj\Debug\net8.0\zadanieTwo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akuno\Desktop\zadanieTwo\obj\Debug\net8.0\zadanieTwo.AssemblyInfoInputs.cache
+C:\Users\akuno\Desktop\zadanieTwo\obj\Debug\net8.0\zadanieTwo.AssemblyInfo.cs
+C:\Users\akuno\Desktop\zadanieTwo\obj\Debug\net8.0\zadanieTwo.csproj.CoreCompileInputs.cache
