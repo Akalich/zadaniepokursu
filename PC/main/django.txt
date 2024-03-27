@@ -1,0 +1,94 @@
+1. **Установка Django**: Если у вас еще нет Django, установите его с помощью `pip`:
+pip install django
+2. **Создание проекта и приложения**: Создайте проект Django и приложение командами:
+   django-admin startproject myproject
+   cd myproject
+   django-admin startapp myapp
+
+3. **Определение моделей**: Определите модели для стран и продуктов в файле `models.py` вашего приложения `myapp`:
+   # models.py
+   from django.db import models
+
+   class Country(models.Model):
+       name = models.CharField(max_length=100)
+
+       def __str__(self):
+           return self.name
+
+   class Product(models.Model):
+       name = models.CharField(max_length=100)
+       country = models.ForeignKey(Country, on_delete=models.CASCADE)
+       price = models.DecimalField(max_digits=10, decimal_places=2)
+
+       def __str__(self):
+           return self.name
+
+4. **Создание представлений**: Определите представления для списка стран и списка продуктов в файле `views.py` вашего приложения:
+   # views.py
+   from django.shortcuts import render
+   from .models import Country, Product
+
+   def country_list(request):
+       countries = Country.objects.all()
+       return render(request, 'country_list.html', {'countries': countries})
+
+   def product_list(request, country_id):
+       products = Product.objects.filter(country_id=country_id)
+       country = Country.objects.get(pk=country_id)
+       return render(request, 'product_list.html', {'products': products, 'country': country})
+
+5. **Создание шаблонов**: Создайте шаблоны для отображения списка стран и продуктов, используя гиперссылки и таблицы:
+
+html
+   <!-- country_list.html -->
+   <h1>Countries</h1>
+   <ul>
+       {% for country in countries %}
+           <li><a href="{% url 'product_list' country.id %}">{{ country.name }}</a></li>
+       {% endfor %}
+   </ul>
+
+html
+   <!-- product_list.html -->
+   <h1>Products in {{ country.name }}</h1>
+   <table>
+       <tr>
+           <th>Name</th>
+           <th>Price</th>
+       </tr>
+       {% for product in products %}
+           <tr>
+               <td>{{ product.name }}</td>
+               <td>${{ product.price }}</td>
+           </tr>
+       {% endfor %}
+   </table>
+
+6. **Настройка маршрутизации URL**: Определите маршруты URL для ваших представлений:
+   # urls.py
+   from django.urls import path
+   from . import views
+
+   urlpatterns = [
+       path('countries/', views.country_list, name='country_list'),
+       path('country/<int:country_id>/', views.product_list, name='product_list'),
+   ]
+
+7. **Добавление ссылок в шаблоне**: Добавьте ссылки на ваши представления в шаблоне базового уровня (`base.html`):
+
+html
+   <!-- base.html -->
+   <a href="{% url 'country_list' %}">Countries</a>
+   {% block content %}{% endblock %}
+
+8. **Добавление маршрутов URL в проект**: Подключите маршруты URL вашего приложения к основному маршруту в вашем проекте:
+python
+   # myproject/urls.py
+   from django.urls import path, include
+
+   urlpatterns = [
+       path('', include('myapp.urls')),
+   ]
+
+После выполнения всех этих шагов, вы можете запустить свой сервер разработки Django:
+  python manage.py runserver

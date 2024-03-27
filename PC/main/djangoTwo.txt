@@ -1,0 +1,85 @@
+1. **Создайте новый проект и приложение Django**:
+Выполните следующие команды в командной строке:
+   django-admin startproject library
+   cd library
+   python manage.py startapp books
+
+2. **Определите модель книги**:
+В файле `models.py` вашего приложения books, определите модель `Book`, описывающую свойства книги:
+   # models.py
+   from django.db import models
+
+   class Book(models.Model):
+       title = models.CharField(max_length=200)
+       year = models.IntegerField()
+
+       def __str__(self):
+           return self.title
+
+3. **Создайте миграции и примените их**:
+Выполните следующие команды для создания миграций на основе вашей модели и их применения к базе данных:
+   python manage.py makemigrations books
+   python manage.py migrate
+
+4. **Добавьте данные в базу данных**:
+Откройте оболочку Django и добавьте несколько записей в таблицу книг:
+   python manage.py shell
+
+В оболочке Python Django введите следующий код для добавления книг:
+python
+   from books.models import Book
+   Book.objects.create(title='The Great Gatsby', year=1925)
+   Book.objects.create(title='To Kill a Mockingbird', year=1960)
+   Book.objects.create(title='1984', year=1949)
+   Book.objects.create(title='Brave New World', year=1932)
+   Book.objects.create(title='Pride and Prejudice', year=1813)
+
+5. **Определите представление**:
+В файле `views.py` вашего приложения определите представление, которое передает книги в шаблон:
+python
+   # views.py
+   from django.shortcuts import render
+   from .models import Book
+
+   def book_list(request):
+       books = Book.objects.all()
+       return render(request, 'book_list.html', {'books': books})
+
+6. **Создайте шаблон для отображения списка книг**:
+Создайте файл `book_list.html` в папке `templates` вашего приложения и добавьте код для отображения списка книг:
+
+html
+   <!-- book_list.html -->
+   <h1>Books</h1>
+   <ul>
+       {% for book in books %}
+           <li>{{ book.title }}, {{ book.year }}</li>
+       {% endfor %}
+   </ul>
+
+7. **Определите URL-маршрут**:
+В файле `urls.py` вашего приложения определите URL-маршрут для представления `book_list`:
+python
+   # urls.py
+   from django.urls import path
+   from .views import book_list
+
+   urlpatterns = [
+       path('books/', book_list, name='book_list'),
+   ]
+
+8. **Добавьте маршрут в основной URL-маршрут**:
+Включите URL-маршруты вашего приложения в основной URL-маршрут проекта `library/urls.py`:
+
+python
+   # library/urls.py
+   from django.urls import path, include
+
+   urlpatterns = [
+       path('', include('books.urls')),
+   ]
+
+9. **Запустите сервер и проверьте результат**:
+Запустите сервер разработки Django:
+
+   python manage.py runserver
